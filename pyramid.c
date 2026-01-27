@@ -14,4 +14,4 @@ int i,j,k;
     printf("\n");
     }
 return 0;
-}
+} 
