@@ -35,21 +35,21 @@
 
 // Right Angle Triangle......
 
-// #include <stdio.h>
-// int main (){
-//             int i, j, n;
+#include <stdio.h>
+int main (){
+            int i, j, n;
 
-//                  printf("Enter a Number here :");
-//                  scanf("%d", &n);
-//                     for(i=1; i<=n; i++){
-//                         for(j=1; j<=i; j++){
-//                              printf("%d ", j);
-//                         }
-//                         printf("\n");
-//                     }
-//                        return 0;     
+                 printf("Enter a Number here :");
+                 scanf("%d", &n);
+                    for(i=1; i<=n; i++){
+                        for(j=1; j<=i; j++){
+                             printf("%d ", j);
+                        }
+                        printf("\n");
+                    }
+                       return 0;     
 
-// } 
+} 
 
 // Left Angle Triangle......
 
@@ -73,23 +73,23 @@
 // }   
 // Pyramid Treiangle 
 
-#include<stdio.h>
-int main(){
-            int i,j,n,k; 
-            printf("Enter a number here ");
-            scanf("%d", &n);
+// #include<stdio.h>
+// int main(){
+//             int i,j,n,k; 
+//             printf("Enter a number here ");
+//             scanf("%d", &n);
 
-            for(i=1; i<=n; i++){
-                for(k=1; k<=n-i; k++){
-                    printf(" ");
-                }
-                for(j=1; j<=i; j++){
-                printf("%d ",j);
-                }
-                printf("\n");
-            }
-         return 0;   
-}
+//             for(i=1; i<=n; i++){
+//                 for(k=1; k<=n-i; k++){
+//                     printf(" ");
+//                 }
+//                 for(j=1; j<=i; j++){
+//                 printf("%d ",j);
+//                 }
+//                 printf("\n");
+//             }
+//          return 0;   
+// }
 
 
 
