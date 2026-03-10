@@ -1,48 +1,23 @@
-\# C language project Screenshot 
+# Railway Reservation System (C++)
 
-\## Output Screenshot 
+This project is a simple Railway Reservation System developed using C++ and Object-Oriented Programming concepts.
 
-\### Output Q-5 
+## Features
+- Add new train record
+- Display all train records
+- Search train by train number
+- Menu driven program
 
-!\[Output Q-5](Output/Screenshot 2026-02-16 105707 - Copy) 
+## Output Screenshots
 
+### Output 1
+![Output1](Output2/Screenshot 2026-03-10 140453.png)
 
+### Output 2
+![Output2](Output2/Screenshot 2026-03-10 140520.png)
 
-\### Output Q-4
+### Output 3
+![Output3](Output2/Screenshot 2026-03-10 140540.png)
 
-!\[Output Q-4](Output/Screenshot 2026-02-16 104630 - Copy)
-
-
-
-\### Output Q-3
-
-!\[Output Q-3](Output/Screenshot 2026-02-16 103751)
-
-
-
-\### Output Q-2
-
-!\[Output Q-2](Output/Screenshot 2026-02-16 104158)
-
-
-
-\### Output Q-1
-
-!\[Output Q-1](Output/Screenshot 2026-02-16 104250 - Copy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Output 4
+![Output4](Output2/Screenshot 2026-03-10 140600.png)
