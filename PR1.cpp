@@ -1,40 +1,98 @@
 #include <iostream>
-#include <iomanip>  
 using namespace std;
 
-class TimeConverter {
+class Person
+{
+private:
+    string name;
+    int age;
+    string address;
+
 public:
-
-    void secondsToTime(int totalSeconds) {
-        int hours, minutes, seconds;
-
-        hours = totalSeconds / 3600;
-        minutes = (totalSeconds % 3600) / 60;
-        seconds = totalSeconds % 60;
-
-        cout << "HH:MM:SS => "
-             << hours << ":"
-             << setw(2) << setfill('0') << minutes << ":"
-             << setw(2) << setfill('0') << seconds << endl;
+    // Parameterized Constructor
+    Person(string n, int a, string addr)
+    {
+        name = n;
+        age = a;
+        address = addr;
     }
 
-    void timeToSeconds(int hours, int minutes, int seconds) {
-        int totalSeconds;
+    // Setter methods
+    void setName(string n)
+    {
+        name = n;
+    }
 
-        totalSeconds = (hours * 3600) + (minutes * 60) + seconds;
+    void setAge(int a)
+    {
+        age = a;
+    }
 
-        cout << "Total seconds: " << totalSeconds << endl;
+    void setAddress(string addr)
+    {
+        address = addr;
+    }
+
+    // Getter methods
+    string getName()
+    {
+        return name;
+    }
+
+    int getAge()
+    {
+        return age;
+    }
+
+    string getAddress()
+    {
+        return address;
+    }
+
+    // Display function
+    void display()
+    {
+        cout << "Name: " << name << endl;
+        cout << "Age: " << age << endl;
+        cout << "Address: " << address << endl;
+        cout << "----------------------" << endl;
     }
 };
 
-int main() {
-    TimeConverter obj;
+int main()
+{
+    int n;
 
-    cout << "From seconds to HH:MM:SS:" << endl;
-    obj.secondsToTime(4200);
+    cout << "Enter number of persons: ";
+    cin >> n;
 
-    cout << "\nFrom HH:MM:SS to seconds:" << endl;
-    obj.timeToSeconds(4, 34, 30);
+    Person* p[n];   // Array of objects (pointers)
+
+    string name, address;
+    int age;
+
+    for(int i = 0; i < n; i++)
+    {
+        cout << "\nEnter details of Person " << i + 1 << endl;
+
+        cout << "Name: ";
+        cin >> name;
+
+        cout << "Age: ";
+        cin >> age;
+
+        cout << "Address: ";
+        cin >> address;
+
+        p[i] = new Person(name, age, address);
+    }
+
+    cout << "\nPerson Details:\n";
+
+    for(int i = 0; i < n; i++)
+    {
+        p[i]->display();
+    }
 
     return 0;
 }
